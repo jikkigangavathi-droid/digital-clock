@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple digital clock built with HTML, CSS, and JavaScript.">
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="clock-card" aria-label="Digital clock">
+      <div class="clock-icon" aria-hidden="true">◷</div>
+      <p class="eyebrow">YOUR LOCAL TIME</p>
+      <h1>Digital Clock</h1>
+      <p id="date" class="date">Loading date…</p>
+      <div id="time" class="time" role="timer" aria-live="off">--:--:--</div>
+      <p id="period" class="period"> </p>
+      <div class="divider"></div>
+      <p class="note">Time updates automatically every second.</p>
+    </section>
+    <footer>Made with HTML, CSS &amp; JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

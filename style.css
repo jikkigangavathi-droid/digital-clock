@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1020;
+  color: #f5f7ff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(80, 91, 220, 0.28), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(10, 183, 190, 0.18), transparent 32%),
+    #0b1020;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.clock-card {
+  width: min(650px, 100%);
+  padding: clamp(28px, 6vw, 54px) 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
+  background: rgba(21, 29, 53, 0.82);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+.clock-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 20px;
+  border-radius: 18px;
+  color: #8ce7ef;
+  background: rgba(140, 231, 239, 0.12);
+  font-size: 2.4rem;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #8ce7ef;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  letter-spacing: -0.04em;
+}
+
+.date {
+  margin: 14px 0 30px;
+  color: #b5bfd6;
+  font-size: clamp(0.95rem, 2.8vw, 1.1rem);
+}
+
+.time {
+  color: #ffffff;
+  font-size: clamp(3rem, 11vw, 6.2rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.025em;
+  line-height: 1.1;
+  text-shadow: 0 0 28px rgba(140, 231, 239, 0.18);
+}
+
+.period {
+  min-height: 1.4em;
+  margin: 14px 0 0;
+  color: #8ce7ef;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.divider {
+  width: 64px;
+  height: 3px;
+  margin: 26px auto 18px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #8ce7ef, #7d8cff);
+}
+
+.note {
+  margin: 0;
+  color: #9ba7c1;
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 22px;
+  color: #7f8ba7;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 420px) {
+  .page {
+    padding: 14px;
+  }
+
+  .clock-card {
+    border-radius: 20px;
+  }
+}
